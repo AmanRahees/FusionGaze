@@ -1,0 +1,15 @@
+nav{
+    position: fixed;
+    background: none;
+    z-index: 10;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-scroll{
+    background: #ffffff33;
+    backdrop-filter: blur(10px);
+}
+
+.hm-auth:hover{
+    background-color: rgb(51, 51, 51, 0.5);
+}

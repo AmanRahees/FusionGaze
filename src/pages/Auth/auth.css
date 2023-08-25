@@ -1,0 +1,44 @@
+.dm-ath{
+    background-image: url('../../assets/images/bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fm-a{
+    background: #ffffff11;
+    backdrop-filter: blur(10px);
+    padding: 3%;
+    width: 80%; 
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+.fm-arg{
+    background: #ffffff11;
+    backdrop-filter: blur(10px);
+    padding: 3%;
+    width: auto;
+}
+
+.fm-arg-wrap{
+    display: flex;
+}
+
+.fm-a button, .fm-arg button{
+    background: #3d39ff;
+    width: 100%;
+}
+
+@media (max-width:576px) {
+    .fm-a{
+        padding: 5% 3%;
+        align-items: flex-start;
+    }
+    .fm-arg-wrap{
+        flex-direction: column;
+    }
+}

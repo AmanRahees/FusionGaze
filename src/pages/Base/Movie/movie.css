@@ -1,0 +1,65 @@
+.dmv-pt{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.dmv-pt .dmv-poster{
+    max-width: 300px;
+    align-self: flex-start;
+    border: none;
+}
+
+.dmv-pt .dmv-poster:hover{
+    transform: scale(1);
+}
+
+.fa-star{
+    color: #f6bb2d;
+}
+
+#getTrailer{
+    background: #ffffff11;
+    border: 0.4px solid #333;
+}
+
+#bookTicket{
+    background: #3d39ff;
+}
+
+#bookTicket:hover{
+    background: #20136f;
+}
+
+.bk-cls{
+    position: relative;
+    float: right;
+}
+
+.bk-cls::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 20px;
+    background: #ffffff33;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.bk-cls:hover::before{
+    opacity: 1;
+}
+
+@media (max-width:576px) {
+    .dmv-pt{
+        flex-direction: column;
+    }
+
+    .mv-dts{
+        margin: 30px 0;
+    }
+}

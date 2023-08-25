@@ -1,0 +1,50 @@
+.dbd-dv{
+    background: #ddebf3;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.minDv{
+    position: static;
+    width: 100%;
+    padding: 1%;
+    margin-left: 5%;
+}
+
+.cntDV{
+    padding: 1%;
+    color: #090909;
+    height: 96vh;
+    overflow: scroll;
+}
+
+.cntDV::-webkit-scrollbar{
+    display: none;
+}
+
+.minDv .card-wrap{
+    display: flex;
+    flex-direction: row;
+}
+
+.minDv .card{
+    padding: 2%;
+    width: 23%;
+}
+
+@media (max-width:756px) {
+    .minDv{
+        margin-left: 20%;
+    }
+    .minDv .card-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .minDv .card{
+        width: 80%;
+        padding: 5%;
+    }
+}

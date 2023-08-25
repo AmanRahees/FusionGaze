@@ -1,0 +1,170 @@
+.sdbDv{
+    background: #000;
+    padding: 3px;
+    width: 5%;
+    position: absolute;
+    z-index: 100;
+    border-right: 1px solid #ddd;
+    transition: all 0.5s ease-in-out;
+}
+
+.sdbDv.active{
+    width: 20%;
+}
+
+.xtnd{
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+.sdb-cnt{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 99vh;
+}
+
+.sdbDv.active  .sdb-cnt {
+    align-items: normal;
+    padding: 0 30px;
+}
+
+.sht {
+    display: block;
+    width: 40px;
+}
+
+.lng {
+    display: none;
+    width: 160px;
+    transition: all 0.5s ease;
+}
+
+.sdbDv.active .sht {
+    display: none; 
+}
+
+.sdbDv.active .lng {
+    display: block; 
+}
+
+#adminBlock{
+    display: flex;
+    margin-top: 40px;
+}
+
+#adminImg{
+    border-radius: 100%;
+    width: 50px;
+    align-self: flex-start;
+}
+
+#adminName{
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.sdbDv.active #adminName{
+    display: inline;
+    margin-left: 10px;
+}
+
+.sdb-ul{
+    overflow: scroll;
+    height: 60vh;
+    margin-top: 20px;
+}
+
+.sdb-ul::-webkit-scrollbar{
+    display: none;
+}
+
+.sdb-ul ul li{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.sdbDv.active  .sdb-ul ul li{
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.sdb-ul ul li:hover{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sdb-ul ul li:hover i{
+    color: #000;
+}
+
+.sdb-ul ul li span{
+    display: none;
+}
+
+.sdbDv.active .sdb-ul ul li span{
+    display: block;
+    margin-left: 10px;
+}
+
+.sdb-ul ul li:hover span{
+    color: #000;
+}
+
+.stg-dv{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    gap: 5%;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.stg-dv i{
+    cursor: pointer;
+    display: inline-block;
+    animation: rotation 3s linear infinite;
+    transition: all 0.5s ease-in-out;
+}
+
+.sdbDv.active .stg-dv{
+    padding: 10px 20px;
+}
+
+.stg-dv span{
+    display: none;
+}
+
+.sdbDv.active .stg-dv span{
+    display: inline;
+    cursor: pointer;
+}
+
+@media (max-width:756px) {
+    .sdbDv{
+        width: 20%;
+        height: 100vh;
+    }
+    .sdbDv.active{
+        width: 50%;
+    }
+}

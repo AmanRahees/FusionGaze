@@ -1,0 +1,9 @@
+.cty-sg{
+    background: #ffffff07;
+}
+
+.cty-sg li{
+    cursor: pointer;
+    border-bottom: 1px solid #ffffff11;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
